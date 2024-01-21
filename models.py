@@ -8,7 +8,7 @@ class Restaurant(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
     address=db.Column(db.String, nullable=False)
-    pizzas =  db.relationship("Pizza", secondary="restaurant_pizza", backref="restaurants")
+   # pizzas =  db.relationship("Pizza", secondary="restaurant_pizza", backref="restaurants")
 
 class Pizza(db.Model):
     __tablename__ = "pizzas"
